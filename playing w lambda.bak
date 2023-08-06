@@ -1,0 +1,61 @@
+#lang scheme
+
+;playing with lambda
+
+(define a 1)
+(define b 2)
+
+(define double
+  (lambda (x)
+    (* 2 x)))
+
+
+(double a)
+(double b) 
+
+;This can still be even more easily accomplished by just a regular expression tho :/ 
+
+(define (double1 x)
+  (* 2 x))
+
+(double1 a)
+(double1 b)
+
+
+
+
+
+
+;Function within a function maybe?
+
+
+(define (triple x) ;writing extra function to combine with double1 function 
+  (* 3 x))
+
+(triple 3) ;testing
+
+;function within a function 
+(double1 (triple 3))
+
+
+;now test with lambda
+(dou
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

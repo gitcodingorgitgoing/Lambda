@@ -1,0 +1,22 @@
+;how to hide complexity with lambda functions: 
+
+1. begin by creating a principle function. This is the function that you will be using lambda to hide it's obscurity 
+
+
+2. Then create a named-lambda-function. This function has two components: 
+	(1) Name of the function with one or several parameters 
+	(2)The unamed lambda function
+		-lambda function contains parameters
+		-also contains the principle function, with all of it's parameters. 
+
+3. Now you have to make a decision: 
+	A. Do you want lambda to obscure the function entirely, so that no input is required? (IDK why you would want this, might as well write a normal fucking function with values instead of parameters) 
+	B. Do you want lambda to have any parameters left for the user to give value to?  
+
+4.	A.  create one variable to take in the param. from the named function, and then create another variable,
+	    This time defined by the previous variable, that takes in the rest of the parameters 
+	    (those in the unamed lambda function) 
+	
+	B.Put the values you want to obscure in the named function, and the ones you want the user to give input 
+          too in the unamed function. Then create a variable that takes in the parameters from the named function. 
+	  

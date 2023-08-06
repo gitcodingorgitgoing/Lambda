@@ -1,0 +1,19 @@
+#lang scheme
+;exploring with lambda: 
+
+
+(define (abst-1 x y)
+  (+ x y)) 
+
+
+
+(define (machine-lambda x)
+  (lambda (y)
+    (abst-1 x y)))
+
+
+(define procedure-machine(machine-lambda 3))
+
+
+
+(procedure-machine 5) 
